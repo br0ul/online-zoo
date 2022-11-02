@@ -68,6 +68,10 @@ main {
     z-index: 100;
 }
 
+.orang {
+    color: #E47209;
+}
+
 .button:hover {
     background-color: #E47209;
 }
