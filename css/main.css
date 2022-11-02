@@ -117,7 +117,9 @@ header {
 .header-nav a:hover,
 .header-nav a:active,
 .footer-nav a:hover,
-.footer-nav a:active {
+.footer-nav a:active,
+.header-copyright a:hover,
+.header-copyright a:active {
     color: #F9804B;
     font-weight: 500;
 }
@@ -141,18 +143,18 @@ header {
 
 .flower-2 {
     position: absolute;
-    top: 2145px;
+    top: 2275px;
 }
 
 .flower-3 {
     position: absolute;
-    top: 2335px;
+    top: 2465px;
     right: 0;
 }
 
 .flower-4 {
     position: absolute;
-    bottom: -300px;
+    bottom: -290px;
     right: 0;
 }
 
@@ -235,13 +237,43 @@ header {
     margin: 54px 0 34px auto;
 }
 
-.slabs {
-    height: 872px;
+.slabs,
+.slabs-left,
+.slabs-right {
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.slabs {
     margin-bottom: 80px;
+}
+
+.slab-nav button {
+    width: 62px;
+    height: 62px;
+    border: none;
+    background-color: #fff;
+}
+
+.slab-n-right:hover,
+.slab-n-right:active {
+    background-image: url(../images/arrow_elips_gr.png);
+}
+
+.slab-n-left:hover,
+.slab-n-left:active {
+    background-image: url(../images/arrow_elips_gl.png);
+}
+
+.slab-n-right {
+    background-image: url(../images/arrow_elips_or.png);
+}
+
+.slab-n-left {
+    background-image: url(../images/arrow_elips_ol.png);
 }
 
 .animal-slab {
@@ -259,6 +291,14 @@ header {
     margin-left: 16px;
     width: 294px;
     float: left;
+}
+
+.slab-nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .animal-slab img {
@@ -510,8 +550,6 @@ footer {
     text-align: right;
 }
 
-.header-copyright a:hover,
-.header-copyright a:active,
 .copyright a:hover,
 .copyright a:active {
     color: #4B9200;
