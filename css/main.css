@@ -17,6 +17,10 @@ h2 {
     font-weight: 400;
 }
 
+.hide {
+    visibility: hidden;
+}
+
 a {
     color: #fff;
     text-decoration: none;
@@ -365,7 +369,7 @@ header {
     margin-top: 12px;
 }
 
-.main-feed-text h1 {
+.main-feed-text h2 {
     color: #FE9013;
     font-size: 48px;
     line-height: 57px;
