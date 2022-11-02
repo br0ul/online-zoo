@@ -258,6 +258,12 @@ header {
     background-color: #fff;
 }
 
+.slab-upper-text {
+    background-color: #000;
+    color: #fff;
+    z-index: 100;
+}
+
 .slab-n-right:hover,
 .slab-n-right:active {
     background-image: url(../images/arrow_elips_gr.png);
@@ -304,6 +310,10 @@ header {
 .animal-slab img {
     width: 366px;
     height: 366px;
+}
+
+.animal-slab img:hover {
+    filter: brightness(60%);
 }
 
 .animal-slab a {
