@@ -36,7 +36,7 @@ main {
 }
 
 .main-first {
-    width: 1160px;
+    width: 100%;
     margin: 140px auto 100px auto;
 }
 
@@ -143,12 +143,12 @@ header {
 
 .flower-2 {
     position: absolute;
-    top: 2275px;
+    bottom: 1820px;
 }
 
 .flower-3 {
     position: absolute;
-    top: 2465px;
+    bottom: 1820px;
     right: 0;
 }
 
@@ -208,8 +208,15 @@ header {
 }
 
 .backstage {
-    margin-bottom: 180px;
+    width: 1160px;
+    margin: 0 auto 180px auto;
     height: 403px;
+}
+
+.slabs-left,
+.slabs-right {
+    margin: 0 auto 0 auto;
+    width: 1160px;
 }
 
 .backstage-featured {
@@ -274,7 +281,6 @@ header {
 .slabs,
 .slabs-left,
 .slabs-right {
-    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -282,6 +288,7 @@ header {
 }
 
 .slabs {
+    position: relative;
     margin-bottom: 80px;
 }
 
@@ -303,10 +310,12 @@ header {
 }
 
 .slab-n-right {
+    margin-right: 120px;
     background-image: url(../images/arrow_elips_or.png);
 }
 
 .slab-n-left {
+    margin-left: 120px;
     background-image: url(../images/arrow_elips_ol.png);
 }
 
@@ -328,6 +337,8 @@ header {
 }
 
 .slab-nav {
+    position: absolute;
+    top: 400px;
     height: 100px;
     width: 100%;
     display: flex;
