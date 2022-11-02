@@ -114,6 +114,14 @@ header {
     margin-left: 63px;
 }
 
+.header-nav a:hover,
+.header-nav a:active,
+.footer-nav a:hover,
+.footer-nav a:active {
+    color: #F9804B;
+    font-weight: 500;
+}
+
 .header-copyright {
     height: 80px;
     color: #fff;
@@ -263,6 +271,7 @@ header {
     font-weight: 600;
     font-size: 16px;
     line-height: 22px;
+    color: #000;
 }
 
 .slab-icon img {
@@ -478,6 +487,12 @@ footer {
     margin-bottom: 10px;
 }
 
+.media-link a:hover,
+.media-link a:active {
+    color: #4B9200;
+    background-color: #4B9200;
+}
+
 .media-logo {
     width: 26px;
     height: 26px;
@@ -493,6 +508,13 @@ footer {
 .copyright {
     font-weight: 100;
     text-align: right;
+}
+
+.header-copyright a:hover,
+.header-copyright a:active,
+.copyright a:hover,
+.copyright a:active {
+    color: #4B9200;
 }
 
 .footer-nav {
