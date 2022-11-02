@@ -68,6 +68,18 @@ main {
     z-index: 100;
 }
 
+.button:hover {
+    background-color: #E47209;
+}
+
+.button:active {
+    background-color: #4B9200;
+}
+
+.button:disabled {
+    background-color: #767474;
+}
+
 .featured {
     position: relative;
 }
