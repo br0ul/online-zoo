@@ -595,6 +595,10 @@ footer {
 .media-link a:hover,
 .media-link a:active {
     color: #4B9200;
+}
+
+.media-link a:hover .media-logo,
+.media-link a:active .media-logo {
     background-color: #4B9200;
 }
 
