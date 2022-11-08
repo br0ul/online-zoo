@@ -19,6 +19,7 @@ h2 {
 
 .hide {
     visibility: hidden;
+    display: none;
 }
 
 a {
