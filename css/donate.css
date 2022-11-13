@@ -108,7 +108,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-top: 107px;
-    margin-bottom: 68px;
+    margin-bottom: 60px;
 }
 
 .picture {
@@ -151,19 +151,71 @@ main {
     font-size: 72px;
 }
 
-.progress {
-    background-image: url(../images/donate/progress_bar.png);
+.prices_bar {
+    margin-top: 17px;
+    margin-bottom: 50px;
+    height: 76px;
+}
+
+.up_bar {
+    background-color: #404950;
+    height: 15px;
+    padding-top: 13px;
     width: 976px;
-    height: 27px;
     margin-bottom: 12px;
 }
 
-.prices {
-    background-image: url(../images/donate/price.png);
-    width: 991px;
-    height: 36px;
-    margin-bottom: 50px;
-    ;
+.bar_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -7px;
+    width: 970px;
+}
+
+.bar_button p {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.bar_buttons input[type="radio"] {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: none;
+    background-color: #FFEE2E;
+    margin-bottom: 21px;
+}
+
+
+/* appearance for checked radiobutton */
+
+.bar_buttons input[type="radio"]:checked {
+    width: 40px;
+    height: 40px;
+    margin-top: -10px;
+    background: url(../images/donate/roller_icon.png);
+    margin-bottom: 6px;
+}
+
+.bar_buttons input[type="radio"]:checked+p {
+    color: #E47209;
+}
+
+.up_bar_inner {
+    width: 917px;
+    height: 2px;
+    background-color: #72828E;
+    margin: 0 auto;
+}
+
+.bar_button {
+    text-align: center;
 }
 
 .center {
@@ -203,7 +255,7 @@ main {
 
 /* appearance for checked radiobutton */
 
-input[type="radio"]:checked {
+.inline input[type="radio"]:checked {
     background-color: #4B9200;
     border: none;
 }
