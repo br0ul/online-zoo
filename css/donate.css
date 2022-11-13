@@ -185,7 +185,27 @@ main {
 }
 
 .radios .inline {
-    width: 78px;
+    width: 85px;
+}
+
+.inline input[type="radio"] {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid #FE9013;
+}
+
+
+/* appearance for checked radiobutton */
+
+input[type="radio"]:checked {
+    background-color: #4B9200;
+    border: none;
 }
 
 .input_button {
