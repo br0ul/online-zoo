@@ -275,7 +275,7 @@ main {
     margin-bottom: 25px;
 }
 
-.center form input[type=text] {
+.center form input[type=number] {
     flex-grow: 2;
     border: none;
     background-color: rgba(255, 255, 255, 0);
