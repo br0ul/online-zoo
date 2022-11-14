@@ -17,6 +17,11 @@ h2 {
     font-weight: 400;
 }
 
+.hide {
+    visibility: hidden;
+    display: none;
+}
+
 a {
     color: #fff;
     text-decoration: none;
@@ -36,7 +41,7 @@ main {
 }
 
 .main-first {
-    width: 1160px;
+    width: 100%;
     margin: 140px auto 100px auto;
 }
 
@@ -64,8 +69,20 @@ main {
     z-index: 100;
 }
 
-.featured {
-    position: relative;
+.orang {
+    color: #E47209;
+}
+
+.button:hover {
+    background-color: #E47209;
+}
+
+.button:active {
+    background-color: #4B9200;
+}
+
+.button:disabled {
+    background-color: #767474;
 }
 
 .featured-button {
@@ -114,6 +131,16 @@ header {
     margin-left: 63px;
 }
 
+.header-nav a:hover,
+.header-nav a:active,
+.footer-nav a:hover,
+.footer-nav a:active,
+.header-copyright a:hover,
+.header-copyright a:active {
+    color: #F9804B;
+    font-weight: 500;
+}
+
 .header-copyright {
     height: 80px;
     color: #fff;
@@ -133,22 +160,23 @@ header {
 
 .flower-2 {
     position: absolute;
-    top: 2145px;
+    bottom: 1820px;
 }
 
 .flower-3 {
     position: absolute;
-    top: 2335px;
+    bottom: 1820px;
     right: 0;
 }
 
 .flower-4 {
     position: absolute;
-    bottom: -300px;
+    bottom: -290px;
     right: 0;
 }
 
 .featured {
+    position: relative;
     width: 100%;
     height: 780px;
     background-image: url(../images/Giant_Panda.png);
@@ -174,7 +202,7 @@ header {
 }
 
 .logo {
-    width: 83px;
+    width: 84px;
     height: 53px;
     background-image: url(../images/logo.png);
     background-size: cover;
@@ -198,8 +226,15 @@ header {
 }
 
 .backstage {
-    margin-bottom: 180px;
+    width: 1160px;
+    margin: 0 auto 180px auto;
     height: 403px;
+}
+
+.slabs-left,
+.slabs-right {
+    margin: 0 auto 0 auto;
+    width: 1160px;
 }
 
 .backstage-featured {
@@ -227,13 +262,79 @@ header {
     margin: 54px 0 34px auto;
 }
 
-.slabs {
-    height: 872px;
+.slab-hover {
+    width: 366px;
+    height: 426px;
+    position: absolute;
+    opacity: 0;
+}
+
+.slab-dark {
+    height: 366px;
+    width: 366px;
+    background-color: #000;
+    opacity: 0.4;
+}
+
+.slab-hover:hover {
+    opacity: 1;
+}
+
+.slab-upper-text {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.673);
+    color: #fff;
+    width: 366px;
+    height: 50px;
+}
+
+.slab-upper-text p {
+    position: relative;
+    top: 10px;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.slabs,
+.slabs-left,
+.slabs-right {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.slabs {
+    position: relative;
     margin-bottom: 80px;
+}
+
+.slab-nav button {
+    width: 62px;
+    height: 62px;
+    border: none;
+    background-color: #fff;
+}
+
+.slab-n-right:hover,
+.slab-n-right:active {
+    background-image: url(../images/arrow_elips_gr.png);
+}
+
+.slab-n-left:hover,
+.slab-n-left:active {
+    background-image: url(../images/arrow_elips_gl.png);
+}
+
+.slab-n-right {
+    margin-right: 120px;
+    background-image: url(../images/arrow_elips_or.png);
+}
+
+.slab-n-left {
+    margin-left: 120px;
+    background-image: url(../images/arrow_elips_ol.png);
 }
 
 .animal-slab {
@@ -253,6 +354,16 @@ header {
     float: left;
 }
 
+.slab-nav {
+    position: absolute;
+    top: 400px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .animal-slab img {
     width: 366px;
     height: 366px;
@@ -263,6 +374,7 @@ header {
     font-weight: 600;
     font-size: 16px;
     line-height: 22px;
+    color: #000;
 }
 
 .slab-icon img {
@@ -271,7 +383,7 @@ header {
     margin-top: 12px;
 }
 
-.main-feed-text h1 {
+.main-feed-text h2 {
     color: #FE9013;
     font-size: 48px;
     line-height: 57px;
@@ -390,7 +502,7 @@ header {
 
 footer {
     background-color: #111115;
-    padding: 41px 220px 50px 220px;
+    padding: 40px 220px 50px 220px;
 }
 
 .footer-left {
@@ -398,7 +510,7 @@ footer {
 }
 
 .footer-first {
-    height: 160px;
+    height: 125px;
 }
 
 .subscribe p {
@@ -470,7 +582,7 @@ footer {
 }
 
 .footer-row-2 {
-    margin-bottom: 49px;
+    margin-bottom: 45px;
 }
 
 .media-link {
@@ -478,7 +590,17 @@ footer {
     margin-bottom: 10px;
 }
 
-.media-logo {
+.media-link a:hover,
+.media-link a:active {
+    color: #4B9200;
+}
+
+.media-link a:hover .media-logo,
+.media-link a:active .media-logo {
+    background-color: #4B9200;
+}
+
+.media-link .media-logo {
     width: 26px;
     height: 26px;
     background-color: #C4C4C480;
@@ -493,6 +615,11 @@ footer {
 .copyright {
     font-weight: 100;
     text-align: right;
+}
+
+.copyright a:hover,
+.copyright a:active {
+    color: #4B9200;
 }
 
 .footer-nav {
