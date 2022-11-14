@@ -190,6 +190,7 @@ main {
     border: none;
     background-color: #FFEE2E;
     margin-bottom: 21px;
+    cursor: pointer;
 }
 
 
@@ -250,6 +251,7 @@ main {
     border-radius: 50%;
     margin-right: 10px;
     border: 1px solid #FE9013;
+    cursor: pointer;
 }
 
 
